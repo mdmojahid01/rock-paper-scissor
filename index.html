@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper scissor game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="bootstrap.css" /> -->
+    <link rel="icon" href="icon.ico" />
+    <script src="script.js"></script>
+    <!-- <script src="script1.js"></script> -->
+
+    <!-- <script src="bootstrap.js"></script>
+    <script src="jquery.js"></script> -->
+  </head>
+  <body>
+    <!-- <div id="bdy">
+      <figure id="loading">
+        <img src="hourglass.gif" id="gif" alt="" />
+        <figcaption id="caption">
+          Now Computer's Turn to choose Please wait...
+        </figcaption>
+      </figure>
+    </div> -->
+    <h1 id="heading">Welcome to Rock Paper Scissor Game !</h1>
+    <div class="container1">
+      <!-- rock input -->
+      <div class="input">
+        <input
+          type="image"
+          name=""
+          id="rock"
+          onclick="fun1();"
+          src="rock.png"
+          value="1"
+        />
+        <label for="rock">
+          <button class="btn1" value="1" onclick="fun1();">Rock</button>
+        </label>
+      </div>
+      <!-- paper input -->
+      <div class="input">
+        <input
+          type="image"
+          name=""
+          id="paper"
+          onclick="fun2();"
+          src="paper.png"
+          value="2"
+        />
+        <label for="paper">
+          <button class="btn1" value="2" onclick="fun2();">Paper</button>
+        </label>
+      </div>
+      <!-- scissor input -->
+      <div class="input">
+        <input
+          type="image"
+          name=""
+          onclick="fun3();"
+          id="scissor"
+          src="scissor.png"
+          value="3"
+        />
+        <label for="scissor">
+          <button class="btn1" value="3" onclick="fun3();">Scissor</button>
+        </label>
+      </div>
+    </div>
+    <h1 class="caption">Choose Anyone and Click to play</h1>
+    <p class="caption" style="font-size: 16px" id="count-para">
+      No. of Play : <span id="pcount"></span> No. of Win :
+      <span id="wcount"></span> No. of Loss : <span id="lcount"></span>
+    </p>
+
+    <!-- Modal -->
+    <div id="hide">
+      <!-- modal win -->
+      <div class="modal-win" id="modal-win">
+        <div class="modal-box1" onclick="hide()">
+          <div class="modal-content">
+            <div class="close-choose">
+              <p id="choose1" class="choose"></p>
+              <button id="close" onclick="hide()">❌</button>
+            </div>
+            <h1 class="modal-header">Congratulation🤟🤟- You Win!🤩🤑🥳</h1>
+
+            <div class="modal-image">
+              <img src="happy.gif" id="happy" alt="Congratulation" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal tie -->
+      <div class="modal-tie" id="modal-tie">
+        <div class="modal-box1" onclick="hide()">
+          <div class="modal-content">
+            <p id="choose2" class="choose"></p>
+            <button id="close" onclick="hide()">❌</button>
+            <h1 class="modal-header">Match Tie - due to same selection.</h1>
+
+            <div class="modal-image-try">
+              <img src="try.gif" id="happy" alt="Congratulation" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal loss -->
+      <div class="modal-loss" id="modal-loss">
+        <div class="modal-box2" onclick="hide()">
+          <div class="modal-content">
+            <p id="choose3" class="choose"></p>
+            <button id="close" onclick="hide()">❌</button>
+            <h1 class="modal-header">Oop's🤪 - You Loss😂🤣</h1>
+
+            <div class="modal-image-loss">
+              <img src="monkey.gif" id="happy" alt="Congratulation" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
