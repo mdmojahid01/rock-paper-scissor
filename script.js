@@ -23,7 +23,7 @@ function win(user,computer){
     var win=document.getElementById("modal-win");
     win.style.cssText="display:block";
     var result=document.getElementById('choose1');
-    result.innerHTML="You Choose : "+user+", Computer Choose : "+computer;
+    result.innerHTML="You Choose : "+user+", And Computer Choose : "+computer;
 
 }
 function tie(user1,computer1){
@@ -37,7 +37,7 @@ function loss(user2,computer2){
     var loss=document.getElementById("modal-loss");
     loss.style.cssText="display:block";
     var result=document.getElementById('choose3');
-    result.innerHTML="You Choose : "+user2+", Computer Choose : "+computer2;
+    result.innerHTML="You Choose : "+user2+", And Computer Choose : "+computer2;
 
 }
 function hide(){
